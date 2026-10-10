@@ -8,7 +8,7 @@
 <p align="center">Ink, light and subtle ripples that respond to the way you move.</p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/release-1.0.1-38BDF8" alt="1.0.1 release" />
+  <img src="https://img.shields.io/badge/release-1.1.0-38BDF8" alt="1.1.0 release" />
   <img src="https://img.shields.io/badge/macOS-13%2B%20target-111827" alt="macOS 13 and later deployment target" />
   <img src="https://img.shields.io/badge/build-Universal-6366F1" alt="Universal build" />
 </p>
@@ -26,7 +26,7 @@
 Magic Cursor is a native macOS menu bar app that adds expressive effects around your existing cursor. Smooth ink follows your path, light stretches with your speed, and small pulses respond to turns, pauses and clicks. Each effect can be switched on independently, with presets for a quick start and finer controls for a personal look.
 
 > [!NOTE]
-> **1.0.1 is available.** [Download Free from GitHub](https://github.com/LEEmj526/magic-cursor/releases/latest/download/MagicCursor-v1.0.1.dmg) or [buy Pro for $1.49 USD](https://1380489593066.gumroad.com/l/magic-cursor-pro). The Universal DMG is ad hoc signed and has not been notarized by Apple; first launch may need an extra macOS approval step. Automatic update distribution is still being prepared.
+> **1.1.0 is available.** [Download Free from GitHub](https://github.com/LEEmj526/magic-cursor/releases/latest/download/MagicCursor-v1.1.0.dmg) or [buy Pro for $1.49 USD](https://1380489593066.gumroad.com/l/magic-cursor-pro). The Universal DMG is ad hoc signed and has not been notarized by Apple; first launch may need an extra macOS approval step. Automatic update distribution is still being prepared.
 
 <p align="center">
   <img src="screenshots/settings.png" alt="Actual Magic Cursor effect settings in English" width="800" />
@@ -35,7 +35,7 @@ Magic Cursor is a native macOS menu bar app that adds expressive effects around 
 
 ## Features
 
-### Five effects, one familiar cursor
+### Six effects, one familiar cursor
 
 Magic Cursor keeps the macOS pointer and draws effects around it. The overlay passes clicks through, stays out of keyboard focus and draws above ordinary app windows, including System Settings. Switch effects independently in **Settings → Effects**.
 
@@ -46,6 +46,7 @@ Magic Cursor keeps the macOS pointer and draws effects around it. The overlay pa
 | **Orbit Dust** | Small specks appear when you change direction sharply. Particle count and lifetime are bounded. | Turn threshold, particles per turn, lifetime and total particle limit. |
 | **Rest Pulse** | One gentle pulse appears after movement stops. It waits for movement before firing again. | Rest delay. |
 | **Action Ripple** | Different ripples respond to left, right and double clicks. | Ripple duration. Click delivery depends on macOS event policies. |
+| **Focus Spotlight** | Dims the active display outside a clear circle around the cursor for presentations. Other displays remain unchanged. | Spotlight radius and background dimming. Disabled with Reduce Transparency. |
 
 ### Ready-made looks
 
@@ -56,6 +57,7 @@ Magic Cursor keeps the macOS pointer and draws effects around it. The overlay pa
 | **Aurora** | Ink and glow with color changing by direction. | Trial, Pro |
 | **Orbit** | Ink and glow, with turn particles and a rest pulse. | Trial, Pro |
 | **Minimal** | A thinner, shorter ink trail. | Trial, Pro |
+| **Presentation** | Focus Spotlight and click ripples, with no ink or glow. | Trial, Pro |
 
 Presets are starting points. Changes apply immediately and save automatically. In Pro or Trial, save a custom look as a named preset and share it as a JSON file.
 
@@ -76,22 +78,24 @@ Presets are starting points. Changes apply immediately and save automatically. I
 |---|:---:|:---:|
 | Motion Ink and Kinetic Glow | Basic controls | Full controls |
 | Ink and Halo presets | ✓ | ✓ |
-| Orbit Dust, Rest Pulse and Action Ripple | — | ✓ |
-| All five built-in presets | — | ✓ |
+| Orbit Dust, Rest Pulse, Action Ripple and Focus Spotlight | — | ✓ |
+| All six built-in presets | — | ✓ |
 | Custom colors, Aurora and advanced motion settings | — | ✓ |
 | Create and import custom presets | — | ✓ |
 | Export the selected preset | ✓ | ✓ |
 | Intensity, display overlays and battery saving | ✓ | ✓ |
-| Global shortcuts and cursor locator | ✓ | ✓ |
+| Global shortcuts, cursor locator and shake-to-locate | ✓ | ✓ |
+| 1 / 5 / 15 minute pause timer | ✓ | ✓ |
+| Spotlight size / dimming and Presentation preset | — | ✓ |
 | Update checks when release distribution is configured | ✓ | ✓ |
 
 **Try Pro for 3 days (72 hours).** Open **Settings → License** and choose **Start 3-day Pro trial** when you are ready. The trial starts only when you select that button, can be started once on this Mac and does not charge a card or create a subscription. Quitting or reinstalling the app does not reset a retained Keychain trial record.
 
-At expiry, Magic Cursor returns to Free. Your saved settings and presets stay on your Mac; a valid Pro license restores access to those settings. Version 1.0.1 uses the original saved start time for the new 72-hour window, including trials started in the earlier beta.
+At expiry, Magic Cursor returns to Free. Your saved settings and presets stay on your Mac; a valid Pro license restores access to those settings. Version 1.1.0 uses the original saved start time for the new 72-hour window, including trials started in the earlier beta.
 
 ## Installation
 
-**[Download Magic Cursor 1.0.1 — free DMG](https://github.com/LEEmj526/magic-cursor/releases/latest/download/MagicCursor-v1.0.1.dmg).** No Gumroad account or purchase is needed for the GitHub download. The same app supports Free, the 3-day trial and Pro; a valid license unlocks Pro without reinstalling. [Release notes and checksums](https://github.com/LEEmj526/magic-cursor/releases/latest). There is no Homebrew cask yet.
+**[Download Magic Cursor 1.1.0 — free DMG](https://github.com/LEEmj526/magic-cursor/releases/latest/download/MagicCursor-v1.1.0.dmg).** No Gumroad account or purchase is needed for the GitHub download. The same app supports Free, the 3-day trial and Pro; a valid license unlocks Pro without reinstalling. [Release notes and checksums](https://github.com/LEEmj526/magic-cursor/releases/latest). There is no Homebrew cask yet.
 
 1. Download the official **MagicCursor** DMG.
 2. Open it and drag **Magic Cursor** into **Applications**.
@@ -113,7 +117,7 @@ Downloading through Terminal or a package manager does not sign or notarize an a
 2. Select **Ink** or **Halo**. Both work in Free.
 3. Move the pointer around and adjust **Intensity**. Lower it for a more subtle look.
 4. Open the gear icon or **Customize effects…** for the full settings window.
-5. In **Effects**, enable only the effects you want. The three additional effects require Trial or Pro.
+5. In **Effects**, enable only the effects you want. The four additional effects require Trial or Pro.
 
 ### Customize the motion
 
@@ -129,6 +133,7 @@ In **Settings → Appearance & Motion** (Trial or Pro):
 | Glow minimum radius / maximum length / opacity | The size, stretch and strength of the halo. |
 | Turn threshold / particles per turn / particle lifetime | When turn particles appear, their count and how long they live. |
 | Rest delay / click ripple duration | How long a stop waits before pulsing, and how long a click ripple lasts. |
+| Spotlight radius / background dimming | The size of the clear circle and the darkness outside it on the active display. |
 
 For less visual clutter, shorten the trail, reduce intensity, or disable Orbit Dust and Action Ripple. To emphasize direction, try Aurora and increase the glow length.
 
@@ -140,6 +145,12 @@ For less visual clutter, shorten the trail, reduce intensity, or disable Orbit D
 4. Use **Export…** to save the selected preset as JSON. Use **Import…** to load a preset (Trial or Pro).
 
 Changes are saved automatically. Export a preset before experimenting if you want a separate copy. You can delete custom presets from the Presets screen; built-in presets remain available.
+
+### Find your cursor and take a break
+
+- **Shake to locate:** enable this optional switch in General, then move the cursor briskly back and forth three times. Small jitter and normal movement do not trigger it. A cooldown prevents repeated flashes. The locator respects Reduce Motion. This option is off by default; when enabled, lightweight position sampling continues while ordinary effects are disabled.
+- **Pause timer:** select **1 min**, **5 min** or **15 min** in General or the menu bar. Effects and cursor location gestures pause, with a visible countdown and **Resume now** button. The timer uses elapsed system time. At expiry, effects resume only when the active app and screen/session allow them. Turning Enable effects off cancels the timer; quitting discards the temporary timer.
+- **Presentation (Trial/Pro):** apply this preset to use Focus Spotlight with click ripples. Tune Spotlight radius and Background dimming in Appearance & Motion. The spotlight dims only the display containing the cursor; it does not capture a screen or change the OS brightness. Reduce Transparency suppresses the dimming.
 
 ### Battery, games and login
 
@@ -193,7 +204,7 @@ Check **Enable effects**, individual switches in **Settings → Effects**, and a
 <details>
 <summary><strong>Some effects or presets are locked.</strong></summary>
 
-Orbit Dust, Rest Pulse, Action Ripple and advanced presets/settings require Pro or an active 3-day trial. Start the trial manually in **Settings → License**. When it expires, Free continues working and saved Pro preferences are retained.
+Orbit Dust, Rest Pulse, Action Ripple, Focus Spotlight and advanced presets/settings require Pro or an active 3-day trial. Start the trial manually in **Settings → License**. When it expires, Free continues working and saved Pro preferences are retained.
 
 </details>
 
@@ -231,7 +242,7 @@ The deployment target and Universal build do not establish runtime compatibility
 
 ## Roadmap
 
-- [x] Five motion-responsive effects and independent effect controls.
+- [x] Six cursor effects and independent effect controls.
 - [x] Menu bar controls, settings, presets and English/Korean interfaces.
 - [x] Per-display overlays, power saving, accessibility preferences and app exclusions.
 - [x] Free/Pro permissions and an explicit 3-day trial.
@@ -242,7 +253,7 @@ The deployment target and Universal build do not establish runtime compatibility
 - [ ] Complete Developer ID signing, app/DMG notarization and a real update round trip.
 - [ ] Validate additional macOS versions, Intel Macs, multiple displays and long-session performance.
 - [x] Global effect shortcuts and a cursor locator available in every edition.
-- [x] Publish the 1.0.1 DMG and English documentation on GitHub.
+- [x] Publish the 1.1.0 DMG and English documentation on GitHub.
 
 ## Privacy
 

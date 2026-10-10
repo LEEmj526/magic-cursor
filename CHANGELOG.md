@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.0 — 2026-10-10
+
+- Free: added opt-in shake-to-locate with deliberate reversal detection and a cooldown.
+- Free: added 1, 5 and 15 minute effect pause timers with a countdown, automatic resume and Resume now.
+- Pro / 3-day trial: added Focus Spotlight, radius/dimming controls and a Presentation preset.
+- Preserved app exclusions, lock/sleep and accessibility preferences for the new tools.
+- Pro remains $1.49 USD one-time.
+
+
 ## 1.0.1 — 2026-10-10
 
 - Reduced the one-time Pro price to $1.49 USD.
