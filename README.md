@@ -72,6 +72,21 @@ Presets are starting points. Changes apply immediately and save automatically. I
 - **Accessibility preferences:** respect Reduce Motion; Reduce Transparency also affects overlay presentation.
 - **Local preferences:** preset import/export, settings recovery and saved Pro preferences retained after a trial expires.
 
+## Pro effect gallery
+
+![Magic Cursor Pro effects: Orbit Dust, Rest Pulse, Action Ripple and Focus Spotlight](screenshots/pro-effects.png)
+
+These illustrations use the app's actual effect renderer with simulated cursor input, shown at 2× scale. They are not screen recordings. Orbit Dust is shown with Motion Ink to make the pointer path easier to follow.
+
+| Pro effect | How to use it | Useful for |
+| --- | --- | --- |
+| **Orbit Dust** | Enable it in **Effects**, then move the pointer through turns. Adjust particle count, lifetime and turn threshold in **Appearance & Motion**. | A playful accent while navigating. |
+| **Rest Pulse** | Enable it in **Effects** and stop moving. A gentle ring appears after the configured rest delay. | Keeping the resting pointer easy to notice. |
+| **Action Ripple** | Enable it in **Effects** and click. Left, right and double clicks produce different ring patterns. | Demonstrations, tutorials and presentations. |
+| **Focus Spotlight** | Apply **Presentation** or enable it in **Effects**. Adjust **Spotlight radius** and **Background dimming** in **Appearance & Motion**. | Guiding attention to the pointer on the active display. |
+
+All four effects are available with Pro or the manually started 3-day trial. Free includes Motion Ink, Kinetic Glow, cursor location tools, pause timers and app exclusions.
+
 ## Free and Pro
 
 | Feature | Free | Pro / 3-day trial |
