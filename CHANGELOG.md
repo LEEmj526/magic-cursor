@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.1 — 2026-10-10
+
+- Reduced the one-time Pro price to $1.49 USD.
+- Added Option + Shift + M to pause or resume effects and Option + Shift + L to locate the cursor.
+- Added a cursor locator that remains available when effects are paused, with menu and General buttons.
+- Added switches for shortcuts and the locator; both are included in Free, Trial and Pro.
+- Preserved app exclusions, lock/sleep suspension and Reduce Motion behavior for the locator.
+
+
 ## 1.0.0 — 2026-10-10
 
 - Removed development notes and unnecessary explanatory text from the app.

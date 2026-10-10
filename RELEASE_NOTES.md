@@ -1,13 +1,11 @@
-# Magic Cursor 1.0.0
+# Magic Cursor 1.0.1
 
-- Removed development notes and unnecessary explanatory text from the app.
-- Raised cursor effects above application windows, including System Settings, while keeping click-through input.
-- Added persistent Free, Pro and Pro trial labels in settings and the menu bar.
-- Dimmed and locked unavailable Pro effects, appearance controls and presets.
-- Restored standard Command-V editing actions, added an explicit license Paste button and improved Gumroad key normalization, specific seller-test-key errors and retry behavior.
-- Added an installed-application picker with names, icons, search and browsing for effect exclusions.
-- Added a direct $2.99 Pro checkout button. The same app upgrades after license verification; no separate Pro installation is needed.
-- Published the free DMG on GitHub. The optional Gumroad support page remains available.
+- Reduced the one-time Pro price to **$1.49 USD**.
+- Added **Option + Shift + M** to pause/resume effects and **Option + Shift + L** to locate the cursor.
+- Added a brief cursor locator ring that works while normal effects are paused. Both new workflow tools are available in Free, Trial and Pro, with switches in General and menu/button alternatives.
+- The locator respects app exclusions, lock/sleep and Reduce Motion.
+
+Includes the 1.0.0 improvements: explicit Free/Pro labels, dimmed locked Pro controls, overlays above System Settings, license paste fixes and installed-app selection by name.
 
 ## Installation
 

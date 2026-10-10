@@ -1,6 +1,6 @@
 # Installation and troubleshooting
 
-Download [Magic Cursor 1.0.0 from GitHub](https://github.com/LEEmj526/magic-cursor/releases/latest). No account or payment is required for the DMG. The release is ad hoc signed and not Apple notarized. On first launch, macOS may require System Settings → Privacy & Security → Open Anyway for this specific app.
+Download [Magic Cursor 1.0.1 from GitHub](https://github.com/LEEmj526/magic-cursor/releases/latest). No account or payment is required for the DMG. The release is ad hoc signed and not Apple notarized. On first launch, macOS may require System Settings → Privacy & Security → Open Anyway for this specific app.
 
 For a released build, open the DMG and drag Magic Cursor to Applications. Launch it and complete onboarding. It lives in the menu bar, with no Dock icon. Enable effects from the menu bar panel; open Settings with Command-comma and quit with Command-Q.
 

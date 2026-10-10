@@ -8,7 +8,7 @@
 <p align="center">Ink, light and subtle ripples that respond to the way you move.</p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/release-1.0.0-38BDF8" alt="1.0.0 release" />
+  <img src="https://img.shields.io/badge/release-1.0.1-38BDF8" alt="1.0.1 release" />
   <img src="https://img.shields.io/badge/macOS-13%2B%20target-111827" alt="macOS 13 and later deployment target" />
   <img src="https://img.shields.io/badge/build-Universal-6366F1" alt="Universal build" />
 </p>
@@ -26,7 +26,7 @@
 Magic Cursor is a native macOS menu bar app that adds expressive effects around your existing cursor. Smooth ink follows your path, light stretches with your speed, and small pulses respond to turns, pauses and clicks. Each effect can be switched on independently, with presets for a quick start and finer controls for a personal look.
 
 > [!NOTE]
-> **1.0.0 is available.** [Download Free from GitHub](https://github.com/LEEmj526/magic-cursor/releases/latest/download/MagicCursor-v1.0.0.dmg) or [buy Pro for $2.99 USD](https://1380489593066.gumroad.com/l/magic-cursor-pro). The Universal DMG is ad hoc signed and has not been notarized by Apple; first launch may need an extra macOS approval step. Automatic update distribution is still being prepared.
+> **1.0.1 is available.** [Download Free from GitHub](https://github.com/LEEmj526/magic-cursor/releases/latest/download/MagicCursor-v1.0.1.dmg) or [buy Pro for $1.49 USD](https://1380489593066.gumroad.com/l/magic-cursor-pro). The Universal DMG is ad hoc signed and has not been notarized by Apple; first launch may need an extra macOS approval step. Automatic update distribution is still being prepared.
 
 <p align="center">
   <img src="screenshots/settings.png" alt="Actual Magic Cursor effect settings in English" width="800" />
@@ -66,7 +66,7 @@ Presets are starting points. Changes apply immediately and save automatically. I
 - **Idle rendering:** animation rendering stops after trails and pulses settle. Position sampling continues to detect new movement; disabling every effect stops both sampling and rendering.
 - **Power saving:** choose 30 or 60 FPS. The battery-saving option caps rendering at 30 FPS on battery or in Low Power Mode. Optional adaptive quality reduces visual detail under rendering load.
 - **Display overlays:** the app creates one overlay per display. Mixed-scale and multiple physical display configurations still need broader testing.
-- **Workflow controls:** launch at login, app exclusions and a global effect switch. Locking the screen or sleeping pauses input and rendering.
+- **Workflow controls:** launch at login, installed-app exclusions, global pause/resume shortcuts and a cursor locator that works while effects are paused. Locking the screen or sleeping pauses input and rendering.
 - **Accessibility preferences:** respect Reduce Motion; Reduce Transparency also affects overlay presentation.
 - **Local preferences:** preset import/export, settings recovery and saved Pro preferences retained after a trial expires.
 
@@ -82,15 +82,16 @@ Presets are starting points. Changes apply immediately and save automatically. I
 | Create and import custom presets | — | ✓ |
 | Export the selected preset | ✓ | ✓ |
 | Intensity, display overlays and battery saving | ✓ | ✓ |
+| Global shortcuts and cursor locator | ✓ | ✓ |
 | Update checks when release distribution is configured | ✓ | ✓ |
 
 **Try Pro for 3 days (72 hours).** Open **Settings → License** and choose **Start 3-day Pro trial** when you are ready. The trial starts only when you select that button, can be started once on this Mac and does not charge a card or create a subscription. Quitting or reinstalling the app does not reset a retained Keychain trial record.
 
-At expiry, Magic Cursor returns to Free. Your saved settings and presets stay on your Mac; a valid Pro license restores access to those settings. Version 1.0.0 uses the original saved start time for the new 72-hour window, including trials started in the earlier beta.
+At expiry, Magic Cursor returns to Free. Your saved settings and presets stay on your Mac; a valid Pro license restores access to those settings. Version 1.0.1 uses the original saved start time for the new 72-hour window, including trials started in the earlier beta.
 
 ## Installation
 
-**[Download Magic Cursor 1.0.0 — free DMG](https://github.com/LEEmj526/magic-cursor/releases/latest/download/MagicCursor-v1.0.0.dmg).** No Gumroad account or purchase is needed for the GitHub download. The same app supports Free, the 3-day trial and Pro; a valid license unlocks Pro without reinstalling. [Release notes and checksums](https://github.com/LEEmj526/magic-cursor/releases/latest). There is no Homebrew cask yet.
+**[Download Magic Cursor 1.0.1 — free DMG](https://github.com/LEEmj526/magic-cursor/releases/latest/download/MagicCursor-v1.0.1.dmg).** No Gumroad account or purchase is needed for the GitHub download. The same app supports Free, the 3-day trial and Pro; a valid license unlocks Pro without reinstalling. [Release notes and checksums](https://github.com/LEEmj526/magic-cursor/releases/latest). There is no Homebrew cask yet.
 
 1. Download the official **MagicCursor** DMG.
 2. Open it and drag **Magic Cursor** into **Applications**.
@@ -149,10 +150,15 @@ Changes are saved automatically. Export a preset before experimenting if you wan
 
 ### Shortcuts and license controls
 
+Global shortcuts and the cursor locator are available in Free, Trial and Pro. The locator briefly draws a ring around the current pointer and works while normal effects are paused. Turn either feature off in **Settings → General**. App exclusions and screen lock/sleep also suppress the locator. Older macOS 15.0/15.1 releases may restrict Option/Shift-only global shortcuts; use the menu or General buttons if a shortcut is unavailable.
+
+<p align="center"><img src="screenshots/general.png" alt="Global shortcut and cursor locator settings" width="800" /></p>
+
 | Action | Where to find it |
 |---|---|
 | Open settings | Menu bar gear / **Command-comma** while the app has focus |
-| Pause or resume | Menu bar → **Enable effects** |
+| Pause or resume | **Option + Shift + M**, or menu bar → **Enable effects** |
+| Find the cursor | **Option + Shift + L**, or **General → Locate cursor now** |
 | Start the 3-day trial | **Settings → License → Start 3-day Pro trial** |
 | Enter a purchased license | **Settings → License**; use the key from your Pro receipt |
 | Check for updates | Menu bar / **Settings → About**; available after feed configuration |
@@ -160,7 +166,7 @@ Changes are saved automatically. Export a preset before experimenting if you wan
 
 ## Support and purchasing
 
-**[Buy Magic Cursor Pro — $2.99 USD, one-time](https://1380489593066.gumroad.com/l/magic-cursor-pro?wanted=true).** In **Settings → License**, choose **Upgrade to Pro · $2.99** to go directly to Gumroad checkout. Gumroad provides a unique license key after purchase. Open **Settings → License**, paste your key and choose **Activate license**. Taxes, currency conversion and the final total appear at checkout. The app's trial does not create a subscription.
+**[Buy Magic Cursor Pro — $1.49 USD, one-time](https://1380489593066.gumroad.com/l/magic-cursor-pro?wanted=true).** In **Settings → License**, choose **Upgrade to Pro · $1.49** to go directly to Gumroad checkout. Gumroad provides a unique license key after purchase. Open **Settings → License**, paste your key and choose **Activate license**. Taxes, currency conversion and the final total appear at checkout. The app's trial does not create a subscription.
 
 Seller test checkout, license delivery, live API verification and installer download have been checked. The distributed app rejects test keys. Activation with an actual paid purchase and a real refund remain to be verified; these checks do not constitute a real paid-purchase test.
 
@@ -235,7 +241,8 @@ The deployment target and Universal build do not establish runtime compatibility
 - [ ] Verify actual paid-purchase activation and refund/revocation.
 - [ ] Complete Developer ID signing, app/DMG notarization and a real update round trip.
 - [ ] Validate additional macOS versions, Intel Macs, multiple displays and long-session performance.
-- [x] Publish the 1.0.0 DMG and English documentation on GitHub.
+- [x] Global effect shortcuts and a cursor locator available in every edition.
+- [x] Publish the 1.0.1 DMG and English documentation on GitHub.
 
 ## Privacy
 
