@@ -315,4 +315,4 @@ Include the app version, macOS version, Mac model, display setup, selected prese
 
 ## Acknowledgments
 
-Built with **SwiftUI**, **AppKit** and **Core Animation**. Update integration uses [Sparkle](https://sparkle-project.org/), with its [license and external notices](https://github.com/sparkle-project/Sparkle/blob/2.9.4/LICENSE) included in the application. Purchase integration uses [Gumroad license keys](https://gumroad.com/help/article/76-license-keys). Earlier development builds integrated the [Lemon Squeezy License API](https://docs.lemonsqueezy.com/api/license-api).
+Built with **SwiftUI**, **AppKit** and **Core Animation**. Update integration uses [Sparkle](https://sparkle-project.org/), with its [license and external notices](https://github.com/sparkle-project/Sparkle/blob/2.9.4/LICENSE) included in the application. Purchase integration uses [Gumroad license keys](https://gumroad.com/help/article/76-license-keys).
