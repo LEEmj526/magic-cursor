@@ -8,7 +8,7 @@
 <p align="center">Ink, light and subtle ripples that respond to the way you move.</p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/release-1.1.0-38BDF8" alt="1.1.0 release" />
+  <img src="https://img.shields.io/badge/release-1.2.0-38BDF8" alt="1.2.0 release" />
   <img src="https://img.shields.io/badge/macOS-13%2B%20target-111827" alt="macOS 13 and later deployment target" />
   <img src="https://img.shields.io/badge/build-Universal-6366F1" alt="Universal build" />
 </p>
@@ -26,7 +26,7 @@
 Magic Cursor is a native macOS menu bar app that adds expressive effects around your existing cursor. Smooth ink follows your path, light stretches with your speed, and small pulses respond to turns, pauses and clicks. Each effect can be switched on independently, with presets for a quick start and finer controls for a personal look.
 
 > [!NOTE]
-> **1.1.0 is available.** [Download Free from GitHub](https://github.com/LEEmj526/magic-cursor/releases/latest/download/MagicCursor-v1.1.0.dmg) or [buy Pro for $1.49 USD](https://1380489593066.gumroad.com/l/magic-cursor-pro). The Universal DMG is ad hoc signed and has not been notarized by Apple; first launch may need an extra macOS approval step. Automatic update distribution is still being prepared.
+> **1.2.0 is available.** [Download Free from GitHub](https://github.com/LEEmj526/magic-cursor/releases/latest/download/MagicCursor-v1.2.0.dmg) or [buy Pro for $1.49 USD](https://1380489593066.gumroad.com/l/magic-cursor-pro). The Universal DMG is ad hoc signed and has not been notarized by Apple; first launch may need an extra macOS approval step. Automatic update distribution is still being prepared.
 
 <p align="center">
   <img src="screenshots/settings.png" alt="Actual Magic Cursor effect settings in English" width="800" />
@@ -106,11 +106,11 @@ All four effects are available with Pro or the manually started 3-day trial. Fre
 
 **Try Pro for 3 days (72 hours).** Open **Settings → License** and choose **Start 3-day Pro trial** when you are ready. The trial starts only when you select that button, can be started once on this Mac and does not charge a card or create a subscription. Quitting or reinstalling the app does not reset a retained Keychain trial record.
 
-At expiry, Magic Cursor returns to Free. Your saved settings and presets stay on your Mac; a valid Pro license restores access to those settings. Version 1.1.0 uses the original saved start time for the new 72-hour window, including trials started in the earlier beta.
+At expiry, Magic Cursor returns to Free. Your saved settings and presets stay on your Mac; a valid Pro license restores access to those settings. Version 1.2.0 uses the original saved start time for the new 72-hour window, including trials started in the earlier beta.
 
 ## Installation
 
-**[Download Magic Cursor 1.1.0 — free DMG](https://github.com/LEEmj526/magic-cursor/releases/latest/download/MagicCursor-v1.1.0.dmg).** No Gumroad account or purchase is needed for the GitHub download. The same app supports Free, the 3-day trial and Pro; a valid license unlocks Pro without reinstalling. [Release notes and checksums](https://github.com/LEEmj526/magic-cursor/releases/latest). There is no Homebrew cask yet.
+**[Download Magic Cursor 1.2.0 — free DMG](https://github.com/LEEmj526/magic-cursor/releases/latest/download/MagicCursor-v1.2.0.dmg).** No Gumroad account or purchase is needed for the GitHub download. The same app supports Free, the 3-day trial and Pro; a valid license unlocks Pro without reinstalling. [Release notes and checksums](https://github.com/LEEmj526/magic-cursor/releases/latest). There is no Homebrew cask yet.
 
 1. Download the official **MagicCursor** DMG.
 2. Open it and drag **Magic Cursor** into **Applications**.
@@ -194,7 +194,8 @@ Global shortcuts and the cursor locator are available in Free, Trial and Pro. Th
 
 **[Buy Magic Cursor Pro — $1.49 USD, one-time](https://1380489593066.gumroad.com/l/magic-cursor-pro?wanted=true).** In **Settings → License**, choose **Upgrade to Pro · $1.49** to go directly to Gumroad checkout. Gumroad provides a unique license key after purchase. Open **Settings → License**, paste your key and choose **Activate license**. Taxes, currency conversion and the final total appear at checkout. The app's trial does not create a subscription.
 
-Seller test checkout, license delivery, live API verification and installer download have been checked. The distributed app rejects test keys. Activation with an actual paid purchase and a real refund remain to be verified; these checks do not constitute a real paid-purchase test.
+
+**One Mac per license in 1.2.0.** Activation registers this Mac with the license server. Reinstalling on the same Mac keeps its device identity. To move the license, choose **Deactivate this device** on the old Mac, then wait up to five minutes before activating on the new Mac. Pro needs periodic internet access; if its five-minute lease expires, Free remains available and the purchase key is retained. Earlier 1.1.0 and beta builds do not have this server device limit. A lost-device transfer requires contacting the seller.
 
 Keep the key delivered with your order private. A purchase unlocks Pro features; downloading the installer or making an optional tip does not by itself activate a Pro license.
 
@@ -264,15 +265,14 @@ The deployment target and Universal build do not establish runtime compatibility
 - [x] Keychain license storage and offline grace logic.
 - [x] Sparkle integration and a Universal app/DMG build pipeline.
 - [x] Configure Gumroad products, seller test checkout and installer delivery.
-- [ ] Verify actual paid-purchase activation and refund/revocation.
 - [ ] Complete Developer ID signing, app/DMG notarization and a real update round trip.
 - [ ] Validate additional macOS versions, Intel Macs, multiple displays and long-session performance.
 - [x] Global effect shortcuts and a cursor locator available in every edition.
-- [x] Publish the 1.1.0 DMG and English documentation on GitHub.
+- [x] Publish the 1.2.0 DMG and English documentation on GitHub.
 
 ## Privacy
 
-Magic Cursor does not collect keyboard input, screen contents or cursor-path telemetry. Cursor motion and mouse-button events are processed briefly in memory for the visual effects. Settings and presets stay on your Mac; trial and license records are stored in Keychain.
+Magic Cursor does not collect keyboard input, screen contents or cursor-path telemetry. Cursor motion and mouse-button events are processed briefly in memory for the visual effects. Settings and presets stay on your Mac; trial and license records are stored in Keychain. The activation server stores a keyed license hash and device-registration data for the one-Mac limit; see [Privacy](PRIVACY.md).
 
 Configured license verification contacts Gumroad. Earlier development builds used Lemon Squeezy. Configured update checks and downloads contact the update feed and archive host. Automatic update checks and downloads are off by default. There is no usage analytics SDK.
 
@@ -315,4 +315,4 @@ Include the app version, macOS version, Mac model, display setup, selected prese
 
 ## Acknowledgments
 
-Built with **SwiftUI**, **AppKit** and **Core Animation**. Update integration uses [Sparkle](https://sparkle-project.org/), with its [license and external notices](https://github.com/sparkle-project/Sparkle/blob/2.9.4/LICENSE) included in the application. Purchase integration uses [Gumroad license keys](https://gumroad.com/help/article/76-license-keys).
+Built with **SwiftUI**, **AppKit** and **Core Animation**. Update integration uses [Sparkle](https://sparkle-project.org/), with its [license and external notices](https://github.com/sparkle-project/Sparkle/blob/2.9.4/LICENSE) included in the application. Purchase integration uses [Gumroad license keys](https://gumroad.com/help/article/76-license-keys). Earlier development builds integrated the [Lemon Squeezy License API](https://docs.lemonsqueezy.com/api/license-api).

@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.0 — 2026-10-10
+
+- Added a server-enforced one-Mac registration limit for the new Pro activation flow.
+- Same-Mac reinstall is idempotent; device transfers require deactivation and up to five minutes for the old lease to expire.
+- Pro renews short online leases; Free and saved settings remain available during expiry.
+- Added fixture tests for registration concurrency, activation, restart, expiry, release and second-device rejection.
+
 ## 1.1.0 — 2026-10-10
 
 - Free: added opt-in shake-to-locate with deliberate reversal detection and a cooldown.
@@ -36,7 +43,7 @@
 - Changed the user-started Pro trial to 3 days (72 hours), preserving the original stored start time and one-trial limit.
 - Updated the English/Korean license UI, detailed product guide and beta installation instructions.
 - Added Gumroad purchase verification, refund/chargeback rejection, provider-specific receipts and local license removal.
-- Prepared Magic Cursor Pro as a $2.99 USD one-time product; checkout is live; actual paid-purchase validation remains pending.
+- Prepared Magic Cursor Pro as a $2.99 USD one-time product; checkout is live.
 - Added a persisted-trial regression check and AppKit checks for the 72-hour boundary.
 
 ## 0.8.0 Beta — 2026-10-10

@@ -1,23 +1,16 @@
-# Magic Cursor 1.1.0
+# Magic Cursor 1.2.0
 
-## New in Free
+## One Mac per Pro license
 
-- Optional shake-to-locate: move the cursor briskly back and forth to reveal a locator ring. Off by default, with a cooldown to avoid repeated flashes.
-- Pause effects for 1, 5 or 15 minutes from General or the menu bar. A countdown and Resume now button make it easy to take a break. Effects resume when the timer ends and the current app/session allows them.
-- Existing global shortcuts and cursor locator remain free.
+- Added server-side device registration using Cloudflare Workers and D1.
+- A license can register one Mac. Reinstalling on that same Mac reuses its registration.
+- A second Mac is rejected until you deactivate on the old Mac and its previous lease expires (up to five minutes).
+- Pro renews a five-minute activation lease every two minutes. Periodic internet access is required; a longer outage temporarily returns the app to Free while retaining the license key.
+- Gumroad still handles checkout. Pro is $1.49 USD one-time; Free and the manually started 3-day trial remain available.
+- Older 1.1.0/beta clients cannot be retroactively subject to the new server registration limit. Install 1.2.0 to use this activation flow.
 
-## New in Pro and the 3-day trial
+## Validation and limits
 
-- Focus Spotlight dims the active display outside a clear circle around the cursor.
-- Adjust the spotlight radius and background dimming.
-- New Presentation preset combines the spotlight and click ripples.
+48 Swift unit tests, 12 server tests using SQLite and 59 actual AppKit fixture checks passed. The deployed production server responds and rejects an actual seller-test key after live Gumroad verification.
 
-**Pro stays $1.49 USD, one-time.** Free keeps basic Ink/Halo effects and practical workflow controls; Pro adds presentation effects and advanced customization.
-
-## Installation and validation
-
-Download MagicCursor-v1.1.0.dmg, drag Magic Cursor into Applications, then launch it. No account is required for the GitHub installer. The same app supports Free, the optional 3-day trial and Pro.
-
-This Universal build targets macOS 13+, is ad hoc signed and has not been notarized by Apple. First launch may require Privacy & Security → Open Anyway for this specific app. Runtime testing covers macOS 15.8.1 on Apple silicon with one display. No automatic update feed is configured.
-
-45 unit tests, 9 release configuration checks and 53 AppKit smoke checks passed. Native UI checks covered the Free/Pro locks, pause countdown and manual resume. Physical keyboard hotkeys, real shake gestures, other macOS versions, Intel runtime and multiple displays still need broader manual testing. Actual paid-purchase activation and refund testing remain unverified; seller test keys work only in the separate developer test app.
+The Universal DMG targets macOS 13+, is ad hoc signed and is not Apple notarized. Runtime testing covers macOS 15.8.1 on Apple silicon; Automatic update distribution is not configured.
